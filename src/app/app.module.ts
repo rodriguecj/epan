@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 /*MDB*/
-import { MDBBootstrapModule } from 'angular-bootstrap-md';
+import { CarouselModule, WavesModule } from 'angular-bootstrap-md';
 
 @NgModule({
   declarations: [
@@ -14,7 +14,8 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MDBBootstrapModule.forRoot()
+    CarouselModule.forRoot(), 
+    WavesModule.forRoot()
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
