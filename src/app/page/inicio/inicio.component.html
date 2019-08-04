@@ -1,0 +1,128 @@
+<!-- <p>inicio works!</p> -->
+<div class="container-fluid inicio">
+    <!-- Banner principal animated zoomInRight -->
+    <div class="main-banner">
+        <div class="pan">
+            <img src="../../../assets/img/main-banner/Marraqueta-1.png" alt="pan">
+        </div>
+        <!-- Mancha  -->
+        <div class="mancha-1">
+            <img src="../../../assets/img/main-banner/mancha.png">
+            <div>
+                <p>Mejor oferta</p>
+                <P>$1.750 x kG</P>
+            </div>
+        </div>
+        <div class="mancha-2">
+            <img src="../../../assets/img/main-banner/mancha.png">
+            <div>
+                <p>Delivery</p>
+                <P>Gratis</P>
+            </div>
+        </div>
+        <div class="wheat1">
+            <img src="../../../assets/img/main-banner/wheat_1.png">
+        </div>
+        <div class="wheat2">
+            <img src="../../../assets/img/main-banner/wheat_1.png">
+        </div>
+        <div class="wheat">
+            <img src="../../../assets/img/main-banner/wheat.png">
+        </div>
+        <div class="wheat3">
+            <img src="../../../assets/img/main-banner/wheat.png">
+        </div>
+        <div class="wheat4">
+            <img src="../../../assets/img/main-banner/wheat_2.png">
+        </div>
+        <div class="wheat5">
+            <img src="../../../assets/img/main-banner/wheat_2.png">
+        </div>
+        <div class="desc-banner">
+            <p class="desc">
+                <strong>
+                    Fresco y Caliente
+                </strong>
+            </p>
+            <p>Creamos lo mejor para ti</p>
+            <div class="boton-banner">
+                <a [routerLink]="['/productos']" mdbBtn type="button" rounded="true" mdbWavesEffect>
+                    <span>ORDENA AHORA</span>
+                </a>
+            </div>
+        </div>
+        <div class="delivery-banner">
+            <p class="desc">
+                <strong>
+                    Horarios Delivery
+                </strong>
+            </p>
+            <p>Todos los días</p>
+            <p>06:00 a 08:00</p>
+            <p>17:00 a 20:00</p>
+        </div>
+    </div>
+    <!-- Fin Banner principal -->
+    <!-- Map de entrega -->
+    <div class="background_map">
+        <div class="row">
+            <div class="col-12">
+                <div>
+                    <h2>
+                        <strong>
+                            Zonas de 
+                            <span style="color:#ffcc00">
+                                Delivery
+                            </span>
+                        </strong>
+                    </h2>
+                    <ul>
+                        <li *ngFor="let item of delivery">
+                            <strong>
+                                {{ item }}
+                            </strong>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Productos -->
+    <div class="productos">
+        <div class="titulo">
+            <h2 style="color: white">
+                NUESTROS PRODUCTOS
+            </h2>
+        </div>
+
+        <!-- Cards -->
+        <div class="card-deck">
+            <!-- Card -->
+            <mdb-card *ngFor="let pan of productos_pan" class="card-inicio">
+                <div class="view overlay waves-light border-view" mdbWavesEffect>
+                    <!-- Card img -->
+                    <mdb-card-img [src]="pan.img" [alt]="pan.titulo"></mdb-card-img>
+                    <a>
+                        <div class="mask rgba-white-slight"></div>
+                    </a>
+                </div>
+                <!--Card content-->
+                <mdb-card-body>
+                    <!--Title-->
+                    <mdb-card-title>
+                        <h4>{{ pan.titulo }}</h4>
+                    </mdb-card-title>
+
+                    <!--Text-->
+                    <mdb-card-text>
+                        {{ pan.text }}
+                    </mdb-card-text>
+
+                    <a [routerLink]="['/productos', pan.name ]" mdbBtn mdbWavesEffect class="btn-color">
+                        Ver más
+                    </a>
+                </mdb-card-body>
+            </mdb-card>
+        </div>
+    </div>
+</div>

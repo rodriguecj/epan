@@ -5,17 +5,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 /*MDB*/
-import { CarouselModule, WavesModule, NavbarModule, IconsModule } from 'angular-bootstrap-md';
+import { CarouselModule, WavesModule, NavbarModule, IconsModule, CardsModule, ButtonsModule } from 'angular-bootstrap-md';
 
 /* Componentes*/
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { InicioComponent } from './page/inicio/inicio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    InicioComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +25,9 @@ import { FooterComponent } from './shared/footer/footer.component';
     CarouselModule.forRoot(), 
     WavesModule.forRoot(),
     NavbarModule,
-    IconsModule
+    IconsModule,
+    CardsModule,
+    ButtonsModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
