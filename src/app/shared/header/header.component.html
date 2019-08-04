@@ -1,0 +1,96 @@
+<!--Navbar-->
+<mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark grey darken-4 fixed-top scrolling-navbar" [containerInside]="false">
+
+    <!-- Navbar brand -->
+    <mdb-navbar-brand>
+        <a class="navbar-brand" href="#">
+            <img [src]="logo" alt="Logo Epan" height="122">
+            <!--  Logo -->
+        </a>
+    </mdb-navbar-brand>
+
+    <!-- Collapsible content -->
+    <links>
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto ancla-menu">
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/inicio']" routerLinkActive="active">
+                    Inicios
+                    <!-- <span class="sr-only">(current)</span> -->
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/productos']" routerLinkActive="active">
+                    Productos
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect [routerLink]="['/login']" routerLinkActive="active">
+                    Acceder
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link waves-light" mdbWavesEffect>Registrarse
+                </a>
+            </li>
+        </ul>
+        <!-- Links -->
+
+        <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+                <a class="nav-link social-style">
+                    <mdb-icon fab icon="facebook-f"></mdb-icon>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link social-style">
+                    <mdb-icon fab icon="instagram"></mdb-icon>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link social-style">
+                    <mdb-icon fas icon="shopping-cart"></mdb-icon>
+                </a>
+            </li>
+        </ul>
+    </links>
+    <!-- Collapsible content -->
+
+</mdb-navbar>
+<!--/.Navbar-->
+
+<!-- Inicio Carrusel -->
+<!-- <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
+            <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Light mask</h3>
+            <p>First text</p>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
+            <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Strong mask</h3>
+            <p>Secondary text</p>
+        </div>
+    </mdb-carousel-item>
+    <mdb-carousel-item>
+        <div class="view w-100">
+            <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
+            <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+        </div>
+        <div class="carousel-caption">
+            <h3 class="h3-responsive">Slight mask</h3>
+            <p>Third text</p>
+        </div>
+    </mdb-carousel-item>
+</mdb-carousel> -->
+
+<!-- Fin Carrusel -->

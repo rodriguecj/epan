@@ -1,1 +1,163 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+/* Body */
+
+body {
+    background-color: #212121
+}
+
+
+/* Margin 10% */
+
+.m-10x100-lateral {
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+
+/* 
+*
+*Navbar 
+*/
+
+.navbar {
+    padding-top: 0 !important
+}
+
+
+/* Menu */
+
+.ancla-menu {
+    margin-right: 15px !important
+}
+
+.ancla-menu li,
+.ancla-menu a {
+    border-radius: 10px !important
+}
+
+.ancla-menu a {
+    font-family: gobold-uplow;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.active {
+    color: #cfa03a !important
+}
+
+
+/* Iconos de redes sociales y carrito de compras */
+
+.social-style {
+    background: #cfa03a;
+    padding: 10px !important;
+    border-radius: 50% !important;
+    font-size: 20px !important;
+    color: black !important;
+    margin-right: 15px;
+    /* font-family: "Font Awesome 5 Brands"; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: gobold-uplow
+}
+
+
+/* Inicio */
+
+app-inicio,
+app-productos,
+app-login {
+    top: 142px;
+    position: relative;
+}
+
+
+/* Cards */
+
+mdb-card {
+    background-color: #212121 !important
+}
+
+
+/* .productos mdb-card,
+.productos mdb-card .card */
+
+mdb-card,
+mdb-card .card {
+    border-top-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+}
+
+.border-view {
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+
+/* .productos */
+
+mdb-card .card {
+    margin-bottom: 0px !important
+}
+
+.card-deck {
+    margin: 50px 10%;
+}
+
+mdb-card-body {
+    background-color: #212121 !important
+}
+
+.btn-color {
+    background: #cfa03a;
+    font-family: gobold-uplow;
+    color: #fff !important;
+}
+
+.btn-color:hover {
+    background: #b18c3c;
+}
+
+
+/* boton cards pagina de productos */
+
+.productos_productos mdb-card-body {
+    position: relative;
+    height: 210px;
+}
+
+.productos_productos mdb-card-body a {
+    position: absolute;
+    bottom: 5%
+}
+
+
+/* Fin cards */
+
+
+/* Footer */
+
+app-footer {
+    position: relative;
+    top: 142px;
+}
+
+
+/* Titulo delivery y productos */
+
+.titulo {
+    background: #cfa03a;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 40px !important
+}
