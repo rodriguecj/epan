@@ -42,6 +42,7 @@
                             "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
                             "node_modules/material-design-icons/iconfont/material-icons.css",
                             "src/assets/font/font.css",
+                            "node_modules/animate.css/animate.css",
                             "src/styles.scss"
                         ],
                         "scripts": [

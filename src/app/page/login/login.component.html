@@ -1,12 +1,11 @@
-<div class="container">
+<div class="container animated fadeIn">
     <div class="row">
         <div class="col-12 col-md-6 login-container">
-            <ngx-auth-firebaseui (onSuccess)="printUser($event)" [providers]=" [providers.Google, providers.Facebook]" [resetPasswordEnabled]=" true " signInTabText="Acceder" signInCardTitleText="Inicia sesíon" forgotPasswordButtonText="¿Olvido su clave?" emailText="Correo"
-                passwordText="Clave" registerTabText="Registrarse" registerCardTitleText="Registrate" registerButtonText="Aceptar" loginButtonText="Aceptar" guestButtonText="Invitado" resetPasswordTabText="Recuperar clave" resetPasswordInputText="Correo de recuperacion"
+            <ngx-auth-firebaseui (onSuccess)="printUser($event)" (onError)="printError($event)" [providers]=" [providers.Google, providers.Facebook]" [resetPasswordEnabled]=" true " signInTabText="Acceder" signInCardTitleText="Inicia sesíon" forgotPasswordButtonText="¿Olvido su clave?"
+                emailText="Correo" passwordText="Clave" registerTabText="Registrarse" registerCardTitleText="Registrate" registerButtonText="Aceptar" loginButtonText="Aceptar" guestButtonText="Invitado" resetPasswordTabText="Recuperar clave" resetPasswordInputText="Correo de recuperacion"
                 resetPasswordActionButtonText="Aceptar" emailErrorRequiredText="Introduce un correo valido" passwordErrorRequiredText="Introduce una clave valida" nameText="Nombre de usuario" nameErrorRequiredText="Introduce un nombre valido" nameErrorMinLengthText=""
                 nameErrorMaxLengthText="" resetPasswordErrorRequiredText="El correo es necesario para recuperar clave">
             </ngx-auth-firebaseui>
         </div>
     </div>
 </div>
-<!-- (onError)="printError()" -->

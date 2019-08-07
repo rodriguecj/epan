@@ -1,5 +1,5 @@
 <!-- <p>inicio works!</p> -->
-<div class="container-fluid inicio">
+<div class="container-fluid inicio animated fadeIn">
     <!-- Banner principal animated zoomInRight -->
     <div class="main-banner">
         <div class="pan">
@@ -102,7 +102,7 @@
                 <div class="view overlay waves-light border-view" mdbWavesEffect>
                     <!-- Card img -->
                     <mdb-card-img [src]="pan.img" [alt]="pan.titulo"></mdb-card-img>
-                    <a>
+                    <a (click)="producto(pan.name)">
                         <div class="mask rgba-white-slight"></div>
                     </a>
                 </div>

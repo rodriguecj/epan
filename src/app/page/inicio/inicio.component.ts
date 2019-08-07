@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-inicio',
@@ -26,9 +27,13 @@ export class InicioComponent implements OnInit {
       name: 'pan_de_masa_madre'
     }
   ]
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit() {
   }
-
+  producto(event){
+    setTimeout(() => {
+      this.router.navigate(['/productos', event])      
+    }, 400);
+  }
 }
