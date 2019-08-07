@@ -1,0 +1,36 @@
+<div class="container-fluid productos_productos">
+    <h2 class="titulo-productos">
+        Elige nuestros mejores productos
+    </h2>
+    <!-- Botones de categoria -->
+    <div class="category d-flex flex-wrap justify-content-center" *ngIf="mostrarCategory">
+        <button mdbBtn type="button" rounded="true" mdbWavesEffect (click)='cargarTodo()'>Todos</button>
+        <button mdbBtn type="button" rounded="true" mdbWavesEffect (click)='cargarMaraquetas()'>Marraquetas</button>
+        <button mdbBtn type="button" rounded="true" mdbWavesEffect (click)='cargarMasaMadre()'>Masa Madre</button>
+        <!-- Fin Botonres -->
+    </div>
+    <!-- Cards card-deck-->
+    <div class=" justify-content-center d-flex flex-wrap ">
+        <!-- Card -->
+        <mdb-card *ngFor="let producto of productos" class="col-sm-12 col-md-3 card-productos">
+            <div class="view overlay waves-light border-view" mdbWavesEffect>
+                <!-- Card img -->
+                <mdb-card-img [src]="producto.img" alt="producto.title"></mdb-card-img>
+                <a>
+                    <div class="mask rgba-white-slight"></div>
+                </a>
+            </div>
+            <!--Card content-->
+            <mdb-card-body>
+                <!--Title-->
+                <mdb-card-title>
+                    <h4>{{ producto.title }}</h4>
+                </mdb-card-title>
+                <a href="#" mdbBtn class="btn-color" mdbWavesEffect>
+                    Comprar
+                </a>
+            </mdb-card-body>
+        </mdb-card>
+    </div>
+    <!-- Fin Cards -->
+</div>

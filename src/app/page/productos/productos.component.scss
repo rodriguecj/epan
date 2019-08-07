@@ -1,0 +1,45 @@
+.titulo-productos {
+    text-align: center;
+    color: #cfa03a;
+    margin-top: 60px;
+}
+
+.productos_productos {
+    padding: 0;
+    margin-bottom: 30px
+}
+
+.productos_productos h4 {
+    color: white;
+    line-height: 31px;
+}
+
+.card-productos {
+    padding: 0;
+    margin: 10px
+}
+
+.category button {
+    border-radius: 30px;
+    background-color: #cfa03a;
+    -moz-box-shadow: 0px 9px 40px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 9px 40px 2px rgba(0, 0, 0, 0.75);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    color: white
+}
+
+.category button:hover {
+    background-color: #b18c3c
+}
+
+
+/* Cortar imagenes de los productos por css */
+
+
+/* .card-productos {
+    clip-path: polygon(0 0, 76% 0, 100% 27%, 100% 100%, 0 100%, 0 0);
+} */
+
+
+/*     clip-path: polygon(0 0, 76% 0, 100% 27%, 100% 100%, 0 100%, 0 0 ); */
