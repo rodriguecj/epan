@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Router, NavigationEnd } from '@angular/router';
+
+/**Woowjs */
+import { NgwWowService } from 'ngx-wow';
+import { Subscription }   from 'rxjs';
 
 @Component({
   selector: 'app-inicio',
@@ -7,6 +11,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./inicio.component.scss']
 })
 export class InicioComponent implements OnInit {
+  
   public delivery: string[] = [
     "Callao",
     "Americo Vespucio",
@@ -27,7 +32,9 @@ export class InicioComponent implements OnInit {
       name: 'pan_de_masa_madre'
     }
   ]
-  constructor( private router: Router) { }
+  constructor( private router: Router, private wowService: NgwWowService) { 
+    this.wowService.init();  
+  }
 
   ngOnInit() {
   }

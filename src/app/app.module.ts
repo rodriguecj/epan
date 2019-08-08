@@ -14,6 +14,8 @@ import { AngularFireDatabaseModule } from '@angular/fire/database';
 import { NgxAuthFirebaseUIModule } from 'ngx-auth-firebaseui';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
+/* NgwWowModule */
+import { NgwWowModule } from 'ngx-wow';
 /* Environment*/
 import { environment } from '../environments/environment'
 
@@ -48,7 +50,8 @@ import { LoginComponent } from './page/login/login.component';
     AngularFireModule.initializeApp(environment.firebase),
     BrowserAnimationsModule,
     NgxSpinnerModule,
-    NgxAuthFirebaseUIModule.forRoot(environment.firebase)
+    NgxAuthFirebaseUIModule.forRoot(environment.firebase),
+    NgwWowModule
   ],
   schemas: [ NO_ERRORS_SCHEMA ],
   providers: [],
