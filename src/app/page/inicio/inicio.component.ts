@@ -33,7 +33,7 @@ export class InicioComponent implements OnInit {
     }
   ]
   constructor( private router: Router, private wowService: NgwWowService) { 
-    this.wowService.init();  
+    //this.wowService.init();  
   }
 
   ngOnInit() {
